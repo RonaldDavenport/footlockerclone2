@@ -6,6 +6,13 @@ import { addShoeData } from "../redux/actions/shoppingCart-action";
 import ImageSlider from "./ImageSlider";
 import "../css/Footlocker.css";
 import BestSellers from "./BestSellers";
+import { createClient } from "@supabase/supabase-js";
+import { ADD_SHOE_DATA, ADD_TO_CART } from "../redux/action-types/getShoeData";
+const supabase = createClient
+ ("https://ezwmibduswttopxcmutr.supabase.co", 
+ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjY1NjIzNSwiZXhwIjoxOTUyMjMyMjM1fQ.T6IwQKPdRMJhBxkq2VOYUxdeOOG4F40rySE0Y0e1Prs");
+
+
 
 <link
   rel="stylesheet"
@@ -35,10 +42,24 @@ export default function Home() {
   const shoes = shoeProduct.ShoeData.shoeData;
   const history = useHistory();
   useEffect(() => {
-    addShoeData(dispatch);
-
+    const getData = async() =>{
+    const { data, error } = await supabase
+  .from('footlockerData')
+  .select()
+  
+  dispatch({
+    type: ADD_SHOE_DATA,
+    payload: 
+      data
     
-  }, []);
+  })
+
+  
+}
+  
+getData();
+    return () => {};
+  }, [dispatch]);
 
   return (
     <div className="main-container">

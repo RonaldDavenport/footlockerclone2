@@ -10,7 +10,7 @@ export default function BestSellers(props) {
             <li>
               <img
                 className="homePageShoeImages"
-                src={shoes[0].media.thumbUrl}
+                src={shoes[0].thumbUrl}
                 alt=""
               />
 
@@ -23,7 +23,7 @@ export default function BestSellers(props) {
             <li>
               <img
                 className="homePageShoeImages"
-                src={shoes[1].media.thumbUrl}
+                src={shoes[1].thumbUrl}
                 alt=""
               />
 
@@ -36,7 +36,7 @@ export default function BestSellers(props) {
             <li>
               <img
                 className="homePageShoeImages"
-                src={shoes[2].media.thumbUrl}
+                src={shoes[2].thumbUrl}
                 alt=""
               />
 
@@ -49,7 +49,7 @@ export default function BestSellers(props) {
             <li>
               <img
                 className="homePageShoeImages"
-                src={shoes[6].media.thumbUrl}
+                src={shoes[6].thumbUrl}
                 alt=""
               />
 

@@ -33,7 +33,7 @@ export const filterProducts = (products,brand,dispatch) =>{
 }
 
 export const addShoeData = ()=> async(dispatch)=>{
-    const res = await fetch("/grabData");
+    const res = await fetch("http://localhost:5000/grabData");
     dispatch(
         {
             type: ADD_SHOE_DATA,

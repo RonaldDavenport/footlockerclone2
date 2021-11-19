@@ -70,7 +70,7 @@ export default function Product(props) {
             <div className="productShoeDivRow1">
               <img
                 className="productPageImages"
-                src={shoeData[key].media.thumbUrl}
+                src={shoeData[key].thumbUrl}
                 alt=""
               />
             </div>
@@ -90,7 +90,7 @@ export default function Product(props) {
                     type: ADD_TO_CART,
                     payload: {
                       id: shoeData[key].id,
-                      image: shoeData[key].media.thumbUrl,
+                      image: shoeData[key].thumbUrl,
                       brand: shoeData[key].brand,
                       name: shoeData[key].title,
                       price: shoeData[key].retailPrice,
