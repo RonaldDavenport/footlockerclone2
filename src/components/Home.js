@@ -37,8 +37,8 @@ export default function Home() {
   useEffect(() => {
     addShoeData(dispatch);
 
-    return () => {};
-  }, [dispatch]);
+    
+  }, []);
 
   return (
     <div className="main-container">
