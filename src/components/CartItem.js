@@ -1,6 +1,6 @@
 import React from 'react'
 import { DELETE_FROM_CART } from '../redux/action-types/getShoeData'
-// import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import "../css/Cart.css"
 let USD = (new Intl.NumberFormat("en-US", {style:"currency", currency:"USD"}))
 

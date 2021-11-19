@@ -1,7 +1,8 @@
 // import React, {useState} from 'react'
 import { SliderPics } from './SliderPics'
+import { useState } from 'react'
 import "../css/Sliders.css"
-// import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa"
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa"
 
 export default function ImageSlider({slides}) {
     const [current, setCurrent] = useState(0)
