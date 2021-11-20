@@ -5,7 +5,7 @@ export default function BestSellers(props) {
     return (
         <div>
             <h1>Best Sellers</h1>
-            <div className="newArrivalsDiv">
+            {/* <div className="newArrivalsDiv">
           <div>
             <li>
               <img
@@ -58,7 +58,7 @@ export default function BestSellers(props) {
               </h5>
             </li>
           </div>
-        </div>
+        </div> */}
         </div>
     )
 }
