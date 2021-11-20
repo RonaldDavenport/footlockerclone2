@@ -57,8 +57,7 @@ export default function Home() {
   
 }
   
-getData();
-    return () => {};
+getData();;
   }, []);
 
   return (
