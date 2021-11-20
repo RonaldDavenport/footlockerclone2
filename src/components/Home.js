@@ -59,7 +59,7 @@ export default function Home() {
   
 getData();
     return () => {};
-  }, );
+  }, []);
 
   return (
     <div className="main-container">
