@@ -1,5 +1,4 @@
 .cartDivs{
-    /* border-bottom: 1px solid lightgray; */
     width: 75vw;
     flex-direction: row;
 }
@@ -9,14 +8,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    /* border-right: 1px solid lightgray; */
-    /* border-bottom: 1px solid lightgray; */
     height: fit-content;
     width: fit-content;
-    /* align-items: left; */
     text-align: center;
     
-    /* width: fit-content */
 }
 .cartText{
     font-size: medium;
@@ -27,7 +22,7 @@
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   /* margin: 25px; */
+
 }
 .cartEmptyDiv{
     display: flex;

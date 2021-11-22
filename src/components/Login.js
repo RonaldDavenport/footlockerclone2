@@ -3,13 +3,12 @@ import { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getUsername, grabUsername } from "../redux/actions/shoppingCart-action";
+import { grabUsername } from "../redux/actions/shoppingCart-action";
 import FootlockerLogo from "../assets/FootlockerLogo.png";
 import { useEffect } from "react";
-// 
 
 import "../css/Login.css";
-import { GET_USERNAME, GRAB_USERNAME } from "../redux/action-types/getShoeData";
+import { GRAB_USERNAME } from "../redux/action-types/getShoeData";
 
 const supabase = createClient(
   "https://ezwmibduswttopxcmutr.supabase.co",
@@ -26,7 +25,7 @@ export default function Login(props) {
     password: "",
   });
   const history = useHistory();
-  console.log(props.signUp);
+  
 
   useEffect(() => {
     grabUsername(formData.username);
@@ -35,7 +34,7 @@ export default function Login(props) {
   }, [formData.username]);
 
   const signup = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const { user, session, error } = await supabase.auth.signUp({
       FirstName: formData.firstname,
       lastname: formData.lastname,
@@ -43,11 +42,9 @@ export default function Login(props) {
       username: formData.username,
       password: formData.password,
     });
-    if (user) {
-      history.go("/");
-    } else {
-      alert(error.message);
-    }
+    history.push('/')
+    console.log(user)
+    console.log(error)
   };
   const login = async (e) => {
     e.preventDefault();
@@ -59,27 +56,21 @@ export default function Login(props) {
       password: formData.password,
     });
     if (session) {
-      history.go("/home");
+      history.push("/home");
+      
     } else {
       alert(error.message);
     }
-    console.log(error);
-    console.log(user);
+    
   };
 
-  console.log(formData);
+  
   return (
     <div className="mainLoginDiv">
-      <img
-        className="loginLogo"
-        src={FootlockerLogo}
-        alt=""
-      />
+      <img className="loginLogo" src={FootlockerLogo} alt="" />
 
       <div className="loginFormDiv">
         <form className="loginForm">
-          {/* <input className="loginInputs" onChange={(e)=> setFormData({...formData, [e.target.name]: e.target.value })} className="inputBoxes" type="text" name="FirstName" value={formData?.firstName} id="" placeholder="First Name"/> */}
-          {/* <input className="loginInputs" onChange={(e)=> setFormData({...formData, [e.target.name]: e.target.value})}  className="inputBoxes" type="text" name="lastname" value={formData?.lastname} id="" placeholder="Last Name"/> */}
           <input
             className="loginInputs"
             onChange={(e) =>
@@ -123,19 +114,19 @@ export default function Login(props) {
               Create Account
             </a>
           </h3>
-          {props?.signup ? (
+          {props?.signUp ? (
             <button
               className="loginButton"
-              onClick={(e) => signup(e)}
+              onClick={(e) => signup(e) (history.push("/")) }
               type="submit"
             >
-              SIGN UP
+              Sign Up
             </button>
           ) : (
             <button
               className="loginButton"
               onClick={(e) => login(e)}
-              type="submit"
+              type="submit" 
             >
               Login
             </button>
