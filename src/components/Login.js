@@ -48,7 +48,7 @@ export default function Login(props) {
     else
 
     (history.push('/'))
-    console.log(error)
+    
   };
   const login = async (e) => {
     e.preventDefault();
