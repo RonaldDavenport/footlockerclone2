@@ -46,7 +46,7 @@ export default function Home() {
     const { data, error } = await supabase
   .from('footlockerData')
   .select()
-  
+  console.log(data)
   dispatch({
     type: ADD_SHOE_DATA,
     payload: 
@@ -58,7 +58,8 @@ export default function Home() {
 }
   
 getData();;
-  }, []);
+return () => {};
+  }, [dispatch]);
 
   return (
     <div className="main-container">
