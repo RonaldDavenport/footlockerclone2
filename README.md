@@ -27,6 +27,7 @@
 <ul> 
 	<li><p><a href="https://main...amplifyapp.com ">Website</a> </p></li>
 		<li><p><a href="https://medium.com/@ron.tech/digital-craft-finals-fullstack-capstone-70523e12eb5a">Medium Article</a> </p></li>
+	<li><p><a href="https://www.youtube.com/watch?v=bWh9Z7BFSp4">Video Walkthrough</a> </p></li>
 	</ul>
 	
 	
