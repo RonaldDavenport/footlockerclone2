@@ -6,7 +6,6 @@ let USD = (new Intl.NumberFormat("en-US", {style:"currency", currency:"USD"}))
 
 export default function CartItem(props) {
     const dispatch = useDispatch()
-    console.log("this is props",props.shoes)
    const shoes = props.shoes
     return (
         

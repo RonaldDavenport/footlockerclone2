@@ -42,7 +42,11 @@ export default function Login(props) {
       username: formData.username,
       password: formData.password,
     });
-    history.push('/')
+    if(user){
+    (history.push('/'))
+    }
+    else
+
     console.log(user)
     console.log(error)
   };
@@ -117,7 +121,7 @@ export default function Login(props) {
           {props?.signUp ? (
             <button
               className="loginButton"
-              onClick={(e) => signup(e) (history.push("/")) }
+              onClick={(e) => signup(e) }
               type="submit"
             >
               Sign Up
