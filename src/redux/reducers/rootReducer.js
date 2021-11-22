@@ -8,7 +8,7 @@ import { getUsername } from "./loginReducer";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["ShoeData", "getUsername"],
+  whitelist: ["ShoeData", "getUsername","CartInfo"],
 };
 
 const rootReducer = combineReducers({
