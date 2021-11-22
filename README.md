@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Footlocker Replica
+# All functionality:
+<ul> 
+  <li> Authenticate Users </li>
+   <li> Read Data From A Database </li>
+  <li> Add Items To A Cart </li>
+  <li> Remove Items From A Cart </li>
+  <li> Calculate Price Of A Cart </li>
+   <li> Calculate Total Items In A Cart </li>
+  
+</ul>
+  
+# All technologies used :
+<ul> 
+  <li> Redux </li>
+   <li> React </li>
+  <li> Javascript </li>
+  <li> CSS </li>
+  <li> Supabase DB </li>
+   <li> Node.js </li>
+    <li> Express.js </li>
+    <li> Deployed on Heroku/AWS </li>
+  
+</ul>
+	
+# Important Links :
+<ul> 
+	<li><p><a href="https://main...amplifyapp.com ">Website</a> </p></li>
+		<li><p><a href="https://medium.com/@ron.tech/digital-craft-finals-fullstack-capstone-70523e12eb5a">Medium Article</a> </p></li>
+	<li><p><a href="https://www.youtube.com/watch?v=bWh9Z7BFSp4">Video Walkthrough</a> </p></li>
+	</ul>
+	
+	
+ <img width="1305" alt="Screen Shot 2021-11-22 at 4 52 43 PM" src="https://user-images.githubusercontent.com/84947708/142946944-bc01fdbb-c6f2-4bba-a00e-281e4d3b4902.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1307" alt="Screen Shot 2021-11-22 at 4 53 04 PM" src="https://user-images.githubusercontent.com/84947708/142946967-65bcfad8-0091-4918-a2ee-5cc46c95524f.png">
+<img width="1305" alt="Screen Shot 2021-11-22 at 4 53 27 PM" src="https://user-images.githubusercontent.com/84947708/142947002-c745f6e0-84ae-4a46-85f5-8240e0f1f4b3.png">
+<img width="1303" alt="Screen Shot 2021-11-22 at 4 53 46 PM" src="https://user-images.githubusercontent.com/84947708/142947034-2efbaf6e-cefe-47a3-b7c9-2e7c51d52773.png">
+<img width="1301" alt="Screen Shot 2021-11-22 at 4 54 10 PM" src="https://user-images.githubusercontent.com/84947708/142947067-0e3d14f0-1039-48b3-aa3d-73b30d9f132e.png"><img width="1303" alt="Screen Shot 2021-11-22 at 4 54 27 PM" src="https://user-images.githubusercontent.com/84947708/142947103-3d1ca416-e695-4d71-b057-7df9b23ac575.png">
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
