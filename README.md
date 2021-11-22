@@ -8,10 +8,10 @@
   <li> Calculate Price Of A Cart </li>
    <li> Calculate Total Items In A Cart </li>
   
-<ul>
+</ul>
   
 # All technologies used :
-  <ul> 
+<ul> 
   <li> Redux </li>
    <li> React </li>
   <li> Javascript </li>
@@ -19,10 +19,18 @@
   <li> Supabase DB </li>
    <li> Node.js </li>
     <li> Express.js </li>
-    li> Deployed on Heroku/AWS </li>
+    <li> Deployed on Heroku/AWS </li>
   
-<ul>
-  <img width="1305" alt="Screen Shot 2021-11-22 at 4 52 43 PM" src="https://user-images.githubusercontent.com/84947708/142946944-bc01fdbb-c6f2-4bba-a00e-281e4d3b4902.png">
+</ul>
+	
+# Important Links :
+<ul> 
+	<li><p><a href="https://main...amplifyapp.com ">Website</a> </p></li>
+		<li><p><a href="https://medium.com/@ron.tech/digital-craft-finals-fullstack-capstone-70523e12eb5a">Medium Article</a> </p></li>
+	</ul>
+	
+	
+ <img width="1305" alt="Screen Shot 2021-11-22 at 4 52 43 PM" src="https://user-images.githubusercontent.com/84947708/142946944-bc01fdbb-c6f2-4bba-a00e-281e4d3b4902.png">
 
 <img width="1307" alt="Screen Shot 2021-11-22 at 4 53 04 PM" src="https://user-images.githubusercontent.com/84947708/142946967-65bcfad8-0091-4918-a2ee-5cc46c95524f.png">
 <img width="1305" alt="Screen Shot 2021-11-22 at 4 53 27 PM" src="https://user-images.githubusercontent.com/84947708/142947002-c745f6e0-84ae-4a46-85f5-8240e0f1f4b3.png">
