@@ -103,7 +103,7 @@ export default function Login(props) {
               setFormData({ ...formData, [e.target.name]: e.target.value })
             }
             className="inputBoxes"
-            type="text"
+            type="password"
             name="password"
             value={formData?.password}
             id=""
