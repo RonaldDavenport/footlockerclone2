@@ -5,25 +5,32 @@ import Product from "./components/Product";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
 import { useSelector } from "react-redux";
+import SignUp from "./components/SignUp";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const signUp = true;
   const name = useSelector((state) => state.getUsername.username);
   const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
-
+  console.log(user)
 
   return (
     <Router forceRefresh={true}>
-      <Route exact path="/signup">
-        <Login signUp={signUp} />
-      </Route>
       <Switch>
-        {user ? (
+      <Route exact path="/signup">
+        <SignUp signUp={signUp} />
+      </Route>
+      <Route exact path="/login">
+            <div className="loginDiv">
+              <Login />
+            </div>
+          </Route>
+        {  user ? (
           <>
-            <Header name={name} signUp={signUp} />
+            
 
             <div className="App">
+            <Header name={name} signUp={signUp} />
               <Route exact path="/home">
                 <Home />
               </Route>
@@ -36,11 +43,7 @@ function App() {
             </div>
           </>
         ) : (
-          <Route exact path="/">
-            <div className="loginDiv">
-              <Login />
-            </div>
-          </Route>
+          console.log("L")
         )}
       </Switch>
     </Router>

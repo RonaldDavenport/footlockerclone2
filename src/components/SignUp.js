@@ -3,20 +3,18 @@ import { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { grabUsername } from "../redux/actions/shoppingCart-action";
+
 import FootlockerLogo from "../assets/FootlockerLogo.png";
-import { useEffect } from "react";
 
 import "../css/Login.css";
 import { GRAB_USERNAME } from "../redux/action-types/getShoeData";
 
-const supabase = createClient(
-  "https://ezwmibduswttopxcmutr.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjY1NjIzNSwiZXhwIjoxOTUyMjMyMjM1fQ.T6IwQKPdRMJhBxkq2VOYUxdeOOG4F40rySE0Y0e1Prs"
-);
-
-export default function Login(props) {
+export default function SignUp(props) {
   const dispatch = useDispatch();
+  const history = useHistory();
+  const pushToLogin = async () => {
+    history.push("/login");
+  };
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -24,30 +22,19 @@ export default function Login(props) {
     username: "",
     password: "",
   });
+  const supabase = createClient(
+    "https://ezwmibduswttopxcmutr.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjY1NjIzNSwiZXhwIjoxOTUyMjMyMjM1fQ.T6IwQKPdRMJhBxkq2VOYUxdeOOG4F40rySE0Y0e1Prs"
+  );
 
-  const history = useHistory();
-  const pushToLogin = async () => {
-    history.push("/login");
-  };
-
-  useEffect(() => {
-    grabUsername(formData.username);
-
-    return () => {};
-  }, [formData.username]);
-
-  const login = async (e) => {
+  const signup = async (e) => {
     e.preventDefault();
-    const { user, session, error } = await supabase.auth.signIn({
+    const { user, session, error } = await supabase.auth.signUp({
       email: formData.email,
       username: formData.username,
       password: formData.password,
     });
-    if (user) {
-      history.push("/home");
-    } else {
-      alert(error.message);
-    }
+    pushToLogin();
   };
 
   return (
@@ -102,11 +89,11 @@ export default function Login(props) {
 
           <button
             className="loginButton"
-            onClick={(e) => login(e)}
+            onClick={(e) => signup(e)}
             type="submit"
             value=""
           >
-            Login
+            Sign Up
           </button>
         </form>
       </div>

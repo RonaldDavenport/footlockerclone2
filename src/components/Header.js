@@ -16,7 +16,7 @@ export default function Header(props) {
   const signOut = async (e) => {
     const {error} = await supabase.auth.signOut();
     
-    history.push("/");
+    history.push("/login");
     if(error){
       alert.message(error)
     }
